@@ -17,8 +17,8 @@ resource "aws_dynamodb_table" "users" {
   }
 
   global_secondary_index {
-    hash_key = 
-    name = 
-    projection_type = 
+    hash_key = "title"
+    name = "titleIndex"
+    projection_type = "ALL"
   }
 }
